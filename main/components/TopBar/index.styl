@@ -1,8 +1,33 @@
 .root
-  padding 4u 2u
-  background greenyellow
+  padding 0 2u
   flex-direction row
   justify-content space-between
+  height 12u
+  align-items center
+  background #fff
 
 .menu
   display none
+  flex-direction row
+
+  +desktop()
+    display flex
+
+.menuItem
+  padding 0 1u
+
+.logo
+  width 116px
+  height 31px
+
+.cart
+  flex-direction row
+  align-items center
+
+.icon
+  width 2.5u
+  height 2.5u
+  margin-left 3u
+
+  &-first
+    margin-left 0
