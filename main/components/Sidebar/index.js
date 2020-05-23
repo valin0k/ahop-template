@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image } from 'react-native'
 import { observer } from 'startupjs'
-import { Text, Search, Filter, Categories } from 'components'
+import { Text, Search, Filter, Categories, ColorPicker } from 'components'
 import { BASE_URL } from 'clientHelpers'
 import './index.styl'
 
@@ -15,5 +15,7 @@ export default observer(function Sidebar () {
         Filter
       View.block
         Categories
+      View.block
+        ColorPicker
   `
 })
