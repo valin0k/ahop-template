@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image } from 'react-native'
 import { observer } from 'startupjs'
-import { Text, Search, Filter } from 'components'
+import { Text, Search, Filter, Categories } from 'components'
 import { BASE_URL } from 'clientHelpers'
 import './index.styl'
 
@@ -13,5 +13,7 @@ export default observer(function Sidebar () {
       Search
       View.block
         Filter
+      View.block
+        Categories
   `
 })
