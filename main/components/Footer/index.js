@@ -28,7 +28,7 @@ export default observer(function Footer () {
         View.menu
           each item, i in MENU
             View.menuItem(styleName={first: !i} key=item)
-              Text=item
+              Text(bold)=item
         View.divider
         View.copyright
           Text Copyright © neha 2018 . All Right Reserved.

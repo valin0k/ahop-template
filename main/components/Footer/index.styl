@@ -1,6 +1,11 @@
 .root
   padding 5u 2u
 
+  +tablet()
+    flex-direction row
+    flex-wrap wrap
+    padding 5u 9u
+
 .icons
   flex-direction row
   margin-top 1.5u
@@ -49,3 +54,22 @@
 
 .contact
   flex-direction row
+
+.left,
+.center,
+.right
+  +tablet()
+    width 50%
+    justify-content center
+
+  +desktop()
+    width 33.33%
+
+.center
+  +tablet()
+    align-items center
+
+.right
+  +desktop()
+    padding-left 6u
+    align-items flex-end
