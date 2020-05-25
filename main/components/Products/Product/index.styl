@@ -1,8 +1,9 @@
 .root
-  flex-wrap wrap
+  //flex-wrap wrap
   margin-top 3u
   min-width 23.5u
   width 100%
+  //flex-grow 1
 
   //&-first
   //  margin 0
@@ -16,15 +17,31 @@
       padding-left 1.5u
       padding-right 0
 
-  +desktop()
-    padding 3u 0 0 3u
-    max-width 53u
+  +wide()
+    padding-left 1.5u
+    width 33.33%
+    padding-right 0
+    &-third
+      padding-left 0
+
+
+  //+desktop()
+  //  padding 3u 0 0 3u
+  //  max-width 53u
+  //  min-width 29u
+  //  width auto
 
 .image
   height 50u
   max-width 53u
   min-width 23.5u
   width 100%
+
+  +desktop()
+    height 45u
+
+  +wide()
+    height 40u
 
 .content
   margin-top 1u

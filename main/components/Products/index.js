@@ -11,6 +11,6 @@ export default observer(function Products() {
   return pug`
     View.root
       each _, i in array
-        Product(key=i first=!i sale=!(i % 2) uri=BASE_URL + '/products/' + i + '.jpg' even=i % 2)
+        Product(key=i third=!(i % 3) sale=!(i % 2) uri=BASE_URL + '/products/' + i + '.jpg' even=i % 2)
   `
 })
