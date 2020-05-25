@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { ScrollView, View } from 'react-native'
 import { Text } from 'components'
-import { TopBar, Promo, Sidebar, ProductFilter, Products } from 'main/components'
+import { TopBar, Promo, Sidebar, ProductFilter, Products, Footer } from 'main/components'
 import './index.styl'
 import { Content } from '@startupjs/ui'
 
@@ -16,5 +16,6 @@ export default observer(function PHome () {
         View.main
           ProductFilter
           Products
+      Footer
   `
 })
