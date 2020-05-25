@@ -1,13 +1,14 @@
 import React from 'react'
 import { View, ImageBackground } from 'react-native'
 import { observer } from 'startupjs'
-import { Span } from '@startupjs/ui'
+import { Span, Button } from '@startupjs/ui'
 import { Text } from 'components'
+// import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
-export default observer(function Product({sale, uri}) {
+export default observer(function Product({sale, uri, even}) {
   return pug`
-    View.root
+    View.root(styleName={even})
       ImageBackground.image(source={uri})
         if sale
           Span.sale SALE
@@ -15,6 +16,8 @@ export default observer(function Product({sale, uri}) {
         View.label
           Text WOODEN FURNITURE
           Text(red) $110.00
+        Text Electronic
+        // Button.icon(color='secondaryText' icon=faShoppingBag variant='text') ADD TO CART
           
   `
 })
