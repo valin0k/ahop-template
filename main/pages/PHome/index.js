@@ -13,8 +13,8 @@ export default observer(function PHome () {
       Promo
       View.content
         Sidebar
-        // View.main
-        //   ProductFilter
-        //   Products
+        View.main
+          ProductFilter
+          Products
   `
 })

@@ -5,10 +5,16 @@
 .content
   padding 6u 3u
   background #fff
-  flex-direction row
+
+  +desktop
+    flex-direction row
   //max-width 100%
 
 .main
   //flex-grow 1
-  margin-left 5u
   max-width 100%
+  width auto
+  margin-top 5u
+
+  +desktop
+    margin 0 0 0 5u

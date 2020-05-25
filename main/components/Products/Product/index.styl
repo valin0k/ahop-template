@@ -1,6 +1,10 @@
 .root
   flex-wrap wrap
-  margin 3u 0 0 3u
+  margin-top 3u
+
+  +desktop()
+    margin 3u 0 0 3u
+  //width 70%
 
   &-first
     margin 0
@@ -13,3 +17,12 @@
 .label
   flex-direction row
   justify-content space-between
+
+.sale
+  background #626262
+  flex-direction row
+  margin 2.5u 0 0 2.5u
+  padding 0.5u 1.5u
+  color #fff
+  max-width 9u
+  text-align center
