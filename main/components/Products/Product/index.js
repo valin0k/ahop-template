@@ -6,9 +6,9 @@ import { Text } from 'components'
 // import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
-export default observer(function Product({sale, uri, even}) {
+export default observer(function Product({ sale, uri, even, first }) {
   return pug`
-    View.root(styleName={even})
+    View.root(styleName={even, first})
       ImageBackground.image(source={uri})
         if sale
           Span.sale SALE
