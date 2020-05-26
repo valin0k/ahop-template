@@ -5,9 +5,9 @@ import { Span } from '@startupjs/ui'
 import { Text } from 'components'
 import './index.styl'
 
-export default observer(function Product({ sale, uri, even, third }) {
+export default observer(function Product({ sale, uri, even, third, first }) {
   return pug`
-    View.root(styleName={ even, third })
+    View.root(styleName={ even, third, first })
       ImageBackground.image(source={uri})
         if sale
           Span.sale SALE

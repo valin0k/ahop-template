@@ -1,7 +1,6 @@
 import React from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, TextInput } from 'react-native'
 import { observer } from 'startupjs'
-import { TextInput } from '@startupjs/ui'
 import { BASE_URL } from 'clientHelpers'
 import { Text } from 'components'
 import './index.styl'
