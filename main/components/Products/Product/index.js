@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, ImageBackground } from 'react-native'
+import { View, Image } from 'react-native'
 import { observer } from 'startupjs'
 import { Span } from '@startupjs/ui'
 import { Text } from 'components'
@@ -8,9 +8,9 @@ import './index.styl'
 export default observer(function Product({ sale, uri, even, third, first }) {
   return pug`
     View.root(styleName={ even, third, first })
-      ImageBackground.image(source={uri})
-        if sale
-          Span.sale SALE
+      Image.image(source={uri})
+      if sale
+        Span.sale SALE
       View.content
         View.label
           Text WOODEN FURNITURE
