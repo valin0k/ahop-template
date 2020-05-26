@@ -12,7 +12,7 @@ export default observer(function Search () {
       View.title
         Text(subtitle bold) Search Products
       View.search
-        TextInput.input
+        TextInput.input(placeholder='Search products...')
         View.button
           Image.icon(source={uri: BASE_URL + '/searchRed.png'})
           
