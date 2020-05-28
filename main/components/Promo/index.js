@@ -12,8 +12,10 @@ export default observer(function TopBar () {
   return pug`
     View.root
       ImageBackground.bg(source={uri: BASE_URL + '/banner.jpg'})
-        Text(title bold) Shop
-        View.breadcrumb
-          Text(subtitle bold) HOME / SHOP
+        View.contentWrapper
+          View.content
+            Text(title bold) Shop
+            View.breadcrumb
+              Text(subtitle bold) HOME / SHOP
   `
 })

@@ -5,23 +5,27 @@
 
   &-first
     margin-top 0
+    +tablet()
+      margin-top 3u
+
+  &-even
+    +tablet()
+      padding-left 1.5u
+      padding-right 0
 
   +tablet()
     width 50%
     padding-right 1.5u
 
-    &-first
-      margin-top 3u
-
-    &-even
-      padding-left 1.5u
-      padding-right 0
+  +desktop()
+    background #fff
 
   +wide()
     padding-left 1.5u
-    width 33.33%
+    //width 33.33%
+    width 25%
     padding-right 0
-    &-third
+    &-fourth
       padding-left 0
 
 .image
@@ -29,12 +33,10 @@
   max-width 53u
   min-width 23.5u
   width 100%
-
   +desktop()
     height 45u
-
   +wide()
-    height 40u
+    height 30u
 
 .content
   margin-top 1u

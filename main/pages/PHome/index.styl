@@ -2,12 +2,20 @@
   flex 1
 
 .content
-  padding 6u 2u
   background #fff
 
   +desktop()
+    align-items center
+
+.contentData
+  padding 6u 2u
+  justify-content center
+
+  +desktop()
+    max-width 162u
     flex-direction row
     padding 6u
+    justify-content center
 
 .main
   max-width 100%
@@ -17,3 +25,6 @@
   +desktop()
     max-width 70%
     padding 0 0 0 5u
+
+  +wide()
+    max-width 80%

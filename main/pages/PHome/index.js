@@ -12,10 +12,11 @@ export default observer(function PHome () {
       TopBar
       Promo
       View.content
-        Sidebar
-        View.main
-          ProductFilter
-          Products
+        View.contentData
+          Sidebar
+          View.main
+            ProductFilter
+            Products
       Footer
   `
 })

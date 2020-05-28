@@ -34,8 +34,8 @@ export default observer(function Footer () {
           Text Copyright © neha 2018 . All Right Reserved.
       View.right
         View.contacts
-          each contact in CONTACTS
-            View.contact
+          each contact, i in CONTACTS
+            View.contact(styleName={first: !i})
               Text(bold)=contact.label 
               Text : #{contact.value}
   `
