@@ -15,6 +15,7 @@ export default observer(function Product({ sale, uri, even, fourth, first }) {
         View.label
           Text WOODEN FURNITURE
           Text(red) $110.00
-        Text Electronic
+        View.category
+          Text Electronic
   `
 })
