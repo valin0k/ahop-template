@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, TouchableOpacity } from 'react-native'
 import { observer } from 'startupjs'
 import { BASE_URL } from 'clientHelpers'
 import { Text } from 'components'
@@ -20,14 +20,14 @@ export default observer(function Footer () {
         Text 20 Years Experience
         View.icons
           each icon, i in ICONS
-            View.iconWrapper(styleName={first: !i} key=icon)
+            TouchableOpacity.iconWrapper(styleName={first: !i} key=icon)
               Image.icon(source={uri: BASE_URL + '/social' + icon})
       View.center
         View.logo
           Image.logo(source={uri: BASE_URL + '/logo.png'})
         View.menu
           each item, i in MENU
-            View.menuItem(styleName={first: !i} key=item)
+            TouchableOpacity.menuItem(styleName={first: !i} key=item)
               Text(bold)=item
         View.divider
         View.copyright

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, TouchableOpacity } from 'react-native'
 import { observer } from 'startupjs'
 import { Text } from 'components'
 import { BASE_URL } from 'clientHelpers'
@@ -11,14 +11,15 @@ const ICONS = ['/search.png', '/bag.png', '/menu.png']
 export default observer(function TopBar () {
   return pug`
     View.root
-      View.logo
+      View.container
         Image.logo(source={uri: BASE_URL + '/logo.png'})
-      View.menu
-        each item in MENU_ITEMS
-          View.menuItem
-            Text(bold)=item
-      View.cart
-        each icon, i in ICONS
-          Image.icon(source={uri: BASE_URL + icon} styleName={first: !i})
+        View.menu
+          each item in MENU_ITEMS
+            TouchableOpacity.menuItem
+              Text(bold)=item
+        View.cart
+          each icon, i in ICONS
+            TouchableOpacity
+              Image.icon(source={uri: BASE_URL + icon} styleName={first: !i})
   `
 })

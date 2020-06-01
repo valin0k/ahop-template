@@ -1,19 +1,25 @@
 .root
+  width 100%
+  background #fff
+
+.container
   padding 0 2u
   flex-direction row
   justify-content space-between
   height 12u
   align-items center
-  background #fff
 
   +tablet()
-    padding 0 4u
+    padding 0 2u
 
   +desktop()
     padding 0 6u
 
   +wide()
-    padding 0 14u
+    width 150u
+    justify-content space-between
+    align-self center
+    padding 5u 0
 
 .menu
   display none
