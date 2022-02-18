@@ -1,0 +1,60 @@
+.root
+  margin-top 3u
+  min-width 23.5u
+  width 100%
+
+  &-first
+    margin-top 0
+    +tablet()
+      margin-top 3u
+
+  &-even
+    +tablet()
+      padding-left 1.5u
+      padding-right 0
+
+  +tablet()
+    width 50%
+    padding-right 1.5u
+
+  +desktop()
+    background #fff
+
+  +wide()
+    padding-left 1.5u
+    //width 33.33%
+    width 25%
+    padding-right 0
+    &-fourth
+      padding-left 0
+
+.image
+  height 50u
+  max-width 53u
+  min-width 23.5u
+  width 100%
+  +desktop()
+    height 45u
+  +wide()
+    height 30u
+
+.content
+  margin-top 1u
+
+.label
+  flex-direction row
+  justify-content space-between
+
+.sale
+  position absolute
+  background #626262
+  margin 2.5u 0 0 2.5u
+  padding 0.5u 1.5u
+  color #fff
+
+.icon
+  align-self self-start
+  padding-left 0
+
+.category
+  margin-top 1u

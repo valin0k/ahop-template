@@ -1,0 +1,6 @@
+export { default as TopBar } from './TopBar'
+export { default as Promo } from './Promo'
+export { default as Sidebar } from './Sidebar'
+export { default as ProductFilter } from './ProductFilter'
+export { default as Products } from './Products'
+export { default as Footer } from './Footer'

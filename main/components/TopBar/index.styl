@@ -1,0 +1,48 @@
+.root
+  width 100%
+  background #fff
+
+.container
+  padding 0 2u
+  flex-direction row
+  justify-content space-between
+  height 12u
+  align-items center
+
+  +tablet()
+    padding 0 2u
+
+  +desktop()
+    padding 0 6u
+
+  +wide()
+    width 150u
+    justify-content space-between
+    align-self center
+    padding 5u 0
+
+.menu
+  display none
+  flex-direction row
+
+  +desktop()
+    display flex
+
+.menuItem
+  padding 0 2u
+
+.logo
+  width 116px
+  height 31px
+
+.cart
+  flex-direction row
+  align-items center
+
+.icon
+  width 2.5u
+  height 2.5u
+  margin-left 3u
+
+  &-first
+    margin-left 0

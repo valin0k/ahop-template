@@ -1,3 +1,29 @@
 .root
-  padding 2u 0
   flex 1
+
+.content
+  background #fff
+
+  +desktop()
+    align-items center
+
+.contentData
+  padding 6u 2u
+  justify-content center
+
+  +desktop()
+    max-width 162u
+    flex-direction row
+    padding 6u
+
+.main
+  max-width 100%
+  width auto
+  margin-top 5u
+
+  +desktop()
+    max-width 70%
+    padding 0 0 0 5u
+
+  +wide()
+    max-width 80%
